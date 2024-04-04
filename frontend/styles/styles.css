@@ -20,6 +20,29 @@ body, input, button {
   color: #484848;
 }
 
+body {
+  background-color: hsl(0, 0%, 90%);
+}
+
+#input {
+  width: 85%;
+}
+
+#submit {
+  width: 15%;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  padding:0.5rem;
+  background-color: hsl(110, 59%, 56%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 #root, #wrapper {
   display: flex;
   flex-direction: column;
@@ -76,10 +99,45 @@ ul, form {
   margin: 1rem 0 1rem 0;
 }
 
+.todoList {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 4px;
+  padding: 1rem;
+  border: 2px solid hsl(200, 50%, 50%);
+  background-color: hsl(200, 80%, 75%);
+}
+
 .todo {
-  padding: 0.15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 4px;
+  padding: 0.8rem;
+  background-color: hsl(170, 80%, 75%);
+  border: 2px solid hsl(170, 50%, 50%);
 }
 
 .todo:hover {
   cursor: pointer;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: hsl(0, 80%, 75%);
+  border: 2px solid hsl(0, 50%, 50%);
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
 }
